@@ -17,8 +17,8 @@ const useCartStore = create<CartStates & CartActions>((set) => ({
 }));
 
 const useCart = () => {
-  const { cart } = useCartStore();
-  return { cart };
+  const { cart, addToCart } = useCartStore();
+  return { cart, addToCart };
 };
 
 export default useCart;

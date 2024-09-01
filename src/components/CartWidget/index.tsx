@@ -11,8 +11,8 @@ const CartWidget = () => {
     >
       <h1>Your cart with {cart.length} items:</h1>
       <ul>
-        {cart.map((item) => (
-          <li>{item}</li>
+        {cart.map((item, index) => (
+          <li key={index}>{item}</li>
         ))}
       </ul>
     </div>
